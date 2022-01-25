@@ -1,25 +1,50 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
 .container {
     border: 5px solid red;
     display: grid;
+    grid-template-columns: 1fr 4fr ;
+    grid-template-rows:    1fr 4fr;
     gap: 10px;
     padding: 5px;
+    height:90vh;
+    text-align: center;
 }
 .header {
-    border: 2px solid blue;
+    background-color:yellowgreen;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 2 / 4; /*start/end*/
+    
 }
 .side-nav {
-    border: 2px solid green;
+    background-color: tomato;
+    grid-column: 1/2;
+    grid-row:    1/4;
 }
 .main {
-    border: 3px dashed orange;
+    border: 5px dashed purple;
+    grid-column: 2/4;
+    grid-row:    2/4;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:    repeat(2, 1fr);
+  
+
 }
 .projects {
-    border: 2px black solid;
+   background-color:lightskyblue;
+    grid-column: 1/2;
+    grid-row: 1/3
 }
 
 .announcements {
-    border: 2px purple solid;
+    
+    background-color: lightpink;
 }
 .trending {
-    border: 2px lightseagreen solid;
+    background-color:lightseagreen;
 }
