@@ -1,0 +1,25 @@
+.container {
+    border: 5px solid red;
+    display: grid;
+    gap: 10px;
+    padding: 5px;
+}
+.header {
+    border: 2px solid blue;
+}
+.side-nav {
+    border: 2px solid green;
+}
+.main {
+    border: 3px dashed orange;
+}
+.projects {
+    border: 2px black solid;
+}
+
+.announcements {
+    border: 2px purple solid;
+}
+.trending {
+    border: 2px lightseagreen solid;
+}
