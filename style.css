@@ -4,26 +4,29 @@
     box-sizing: border-box;
 }
 .container {
-    border: 5px solid red;
+    /* border: 5px solid red; */
     display: grid;
-    grid-template-columns: minmax(33%, 1fr) minmax(67%, 4fr) ;
+    grid-template-columns: minmax(25%, 1fr) minmax(75%, 4fr) ;
     grid-template-rows:    1fr 4fr;
-    gap: 10px;
-    padding: 5px;
+    /* gap: 10px; */
+    /* padding: 5px; */
     text-align: center;
 }
 .header {
-    background-color:yellowgreen;
+    background-color:#064E3B;
     /* grid-column-start: 1;
     grid-column-end: 4; */
     grid-column: 2 / 3; /*start/end*/
     display:grid;
     grid-template-columns: minmax(450px, 1fr) minmax(450px,1fr);
+    grid-template-rows: repeat(2 , minmax(90px, 1fr) )
+    box-shadow: 0px 5px 5px rgba(0,0,0, .25);
 }
 /* All the header divs are below */
 .header > div {
     border: 2px solid blue;
-    margin: 5px;
+    border-bottom: 0px;
+    /* margin: 5px; */
 }
 .search {
 
@@ -53,10 +56,15 @@ img {
 
 }
 .btns {
-    background-color:purple;
+    height: 90px;
+    /* justify-self: space-evenly; */
+    gap: 200px;
 }
 button {
-    padding: 20px 30px;
+    /* margin-top: 100%; */
+    padding: 10px 30px;
+    background-color: #D1FAE5;
+    border-radius: 15px;
 }
 input {
     padding:10px 30px;
@@ -65,16 +73,16 @@ input {
 }
 /*-----------side-nav begins below this line---------------*/
 .side-nav {
-    background-color: tomato;
+    background-color: #34D399;
     grid-column: 1/2;
     grid-row:    1/4;
     display:grid;
     grid-template-columns: 1fr;
     color:white;
-    
+    box-shadow: 5px 0px 5px 0px rgba(0,0,0, .25)
 }
 .side-nav > * {
-    border: 5px solid green;
+    /* border: 5px solid green; */
 }
 #side-nav-logo {
     display:flex;
@@ -109,17 +117,17 @@ li {
 }
 /*-----------------------------------------------------*/
 .main {
-    border: 5px dashed purple;
+    /* border: 5px dashed purple; */
     grid-column: 2/3;
     grid-row:    2/4;
     display: grid; 
     grid-template-columns: minmax(600px,2fr) minmax(300px, 1fr);
     grid-template-rows:    repeat(2, minmax(400px, 1fr));
-    
+    background-color: #A7F3D0;
 
 }
 .projects {
-   background-color:lightskyblue;
+   /* background-color:lightskyblue; */
     grid-column: 1/2;
     grid-row: 1/3;
     display: flex;
@@ -146,11 +154,9 @@ li {
 }
 .announcements {
     text-align: left;
-    background-color: lightpink;
     
     padding: 20px;
 }
 
 .trending {
-    background-color:lightseagreen;
 }
