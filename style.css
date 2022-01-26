@@ -77,7 +77,7 @@ input {
     grid-column: 2/4;
     grid-row:    2/4;
     display: grid; 
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: minmax(600px,2fr) 1fr;
     grid-template-rows:    repeat(2, 1fr);
   
 
@@ -89,13 +89,19 @@ input {
     display: flex;
     flex-direction: column;
 }
+.small-img {
+    height:auto;
+    width: 30px;
+}
 .projects h1 {
     align-self: start;
 }
 .card-container {
     border: 3px yellow solid;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 300px); 
+    */
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
 }
 .card {
     border:2px red solid;
