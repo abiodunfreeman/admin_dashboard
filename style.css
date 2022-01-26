@@ -83,6 +83,10 @@ input {
     border: 2px black solid;
     align-self: center;
 } 
+.side-nav-grid {
+    display:grid;
+    grid-template-columns: 1fr;
+}
 .side-nav-grid > ul{
     display: grid;
     grid-template-columns: minmax(30px, 1fr) 3fr;
@@ -90,10 +94,10 @@ input {
     margin-left: 30px;
     justify-content: space-around;
     row-gap: 20px;
-    border: dashed black 2px;
+    /* border: dashed black 2px; */
 }
 ul > * {
-    border: yellow 2px solid;
+    /* border: yellow 2px solid; */
 }
 ul > img {
     height: auto;
@@ -101,6 +105,7 @@ ul > img {
 }
 li {
     list-style: none;
+    font-size: 1.5rem;
 }
 /*-----------------------------------------------------*/
 .main {
